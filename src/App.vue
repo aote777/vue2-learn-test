@@ -4,9 +4,18 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  mounted() {
+    console.log('我是h5本身-进入的时候 收到的链接', window.location.href)
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
